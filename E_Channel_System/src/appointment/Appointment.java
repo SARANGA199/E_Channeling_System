@@ -2,6 +2,7 @@ package appointment;
 
 public class Appointment {
 	
+	//data members
 	private int id;
 	private String name;
 	private String address;
