@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	
+	<!--  Connect with appinsert servlet -->
+	<servlet>
+		<servlet-name>appinsert</servlet-name>
+		<servlet-class>appointment.appinsert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>appinsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--  Connect with DisplayServlet servlet -->
+	<servlet>
+		<servlet-name>DisplayAppointment</servlet-name>
+		<servlet-class>appointment.DisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisplayAppointment</servlet-name>
+		<url-pattern>/display</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--  Connect with UpdateServlet servlet -->
+	<servlet>
+		<servlet-name>updateAppointment</servlet-name>
+		<servlet-class>appointment.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateAppointment</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--  Connect with DeleteServlet servlet -->
+	<servlet>
+		<servlet-name>DeleteAppointment</servlet-name>
+		<servlet-class>appointment.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteAppointment</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+ 
+</web-app> 
